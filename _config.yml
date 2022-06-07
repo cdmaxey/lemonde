@@ -5,3 +5,4 @@ permalink: /:title/
 paginate: 40
 paginate_path: articles/page:num/
 markdown: kramdown
+url: https://lemonde.cdavidmaxey.com
