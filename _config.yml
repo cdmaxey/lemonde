@@ -1,0 +1,7 @@
+gems:
+  - jekyll-redirect-from
+timezone: America/Los_Angeles
+permalink: /:title/
+paginate: 40
+paginate_path: articles/page:num/
+markdown: kramdown
