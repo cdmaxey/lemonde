@@ -8,16 +8,47 @@ redirect_from:
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<title>Video Call</title>
+<title>Video Call | C. David Maxey, M.A.</title>
 <style type="text/css">
 html{background-color:#1a237e}
 body{background:white;font-family:-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,Helvetica,sans-serif;font-size:16px}
 html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;}
 a{text-decoration:none;color:inherit}
-iframe{width:100%;height:100%;border:none;}
+nav.bar{background:white;color:#1a237e}
+nav.bar section{margin:0 auto;display:flex;flex-flow:row wrap;justify-content:flex-start;max-width:1200px}
+nav.bar a{display:block}
+nav.bar a:hover{background:rgba(255,255,255,.1)}
+a.logo{margin:auto 0}
+a.logo>img,a.logo>div,a.logo>svg{display:inline-block;vertical-align:middle}
+a.logo>div{margin:0 .5rem 0 .25rem;line-height:1}
+a.logo>div>div:first-child{font-size:1.325em;padding-bottom:.25rem}
+a.logo>img{height:42px;width:42px;padding:4px}
+@media all and (max-width:374px){a.logo>img,a.logo>svg{display:none}}
+.link{display:inherit}
+.link>*{height:1.125rem}
+.link span{padding:1rem .375rem}
+.link a{padding:1rem .625rem}
+#name{font-size:48px;font-weight:normal;color:#000;line-height:1;margin:2rem auto}
+#name .tangerine{font-family:Tangerine,sans-serif;font-weight:700}
+#name .suffix{font-size:.395em}
+#name .title{font-size:1rem;margin-top:.35rem}
+@media(max-width:360px){#name{font-size:42px}}
+span.MA{font-size:.75em}
+span.MA span{font-size:.5em}
+iframe{width:100%;height:calc(100% - 50px);border:none;}
 </style>
 </head>
 <body>
+<nav class="bar">
+<section>
+    <a class="logo" href="https://lemonde.cdavidmaxey.com/phone-call/">
+        <img src="{{site.url}}/logo.jpg"><div>
+            <div>C. David Maxey, <span class="MA">M<span>.</span>A<span>.</span></span></div>
+            <div><small>Licensed Psychologist Associate</small></div>
+        </div>
+    </a>
+</section>
+</nav>
 <iframe src="https://scheduler.cdavidmaxey.com/portal-embed#/lm-video-call" allowfullscreen title="Scheduler" aria-label="Scheduler"></iframe>
 </body>
 </html>
