@@ -8,13 +8,11 @@
 <title>{% if page.title %}{{page.title}} | {% elsif page.form %}{{page.form.category | capitalize}} &rang; {{page.form.title}} | {% endif %}C. David Maxey, M.A.</title>
 <style>
 html{overflow:auto}
-html,body,div,iframe{margin:0;padding:0;height:100%;border:none;}
-iframe{display:block;width:100%;border:none;overflow-y:auto;overflow-x:hidden;}
+body{margin:0;}
+iframe{display:block;width:100vw;height:100vh;border:none;}
 </style>
 </head>
 <body>
-<div>
 {{content}}
-</div>
 </body>
 </html>
